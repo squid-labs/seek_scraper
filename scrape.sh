@@ -2,7 +2,7 @@
 
 # Execute all Python scripts except *_scraper_utils.py
 for file in *.py; do
-    if [[ "$file" != *_scraper_utils.py ]]; then
+    if [[ "$file" != *scraper_utils.py ]]; then
         echo "Executing: $file"
         python "$file"
 

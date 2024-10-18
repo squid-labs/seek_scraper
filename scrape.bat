@@ -3,7 +3,7 @@ setlocal EnableDelayedExpansion
 
 :: Execute all Python scripts except *_scraper_utils.py
 for %%F in (*.py) do (
-    echo %%F | findstr /i "_scraper_utils.py" >nul
+    echo %%F | findstr /i "scraper_utils.py" >nul
     if errorlevel 1 (
         echo Executing: %%F
         python "%%F"
