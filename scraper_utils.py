@@ -18,6 +18,8 @@ def configure_webdriver():
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
     chrome_service = ChromeService(executable_path='/usr/bin/chromedriver')
+    #chrome_service = ChromeService(executable_path='/usr/src/app/chromedriver')
+    
     driver = webdriver.Chrome(service=chrome_service, options=options)
     stealth(driver,
             languages=["en-US", "en"],
