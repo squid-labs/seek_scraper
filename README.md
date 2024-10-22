@@ -1,4 +1,4 @@
-## Job Scraper for Indeed
+## Job Scraper for Seek
 
 This project consists of two Python scripts designed to scrape job listings from Seek
 
@@ -31,12 +31,6 @@ This project consists of two Python scripts designed to scrape job listings from
    python main.py
 
    ```
-   
-   To modify the search parameters, edit the following variables in the main() function:
-   - country = australia  (Choose from the list of country variables at the top of the script)
-   - job_position = 'Banker'
-   - job_location = 'Melbourne'
-   - date_posted = 10  (Number of days to look back)
 
 2. scraper_utils.py:
    This script contains utility functions used by main.py. It includes functions for:
